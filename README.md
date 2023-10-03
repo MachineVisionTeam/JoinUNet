@@ -33,26 +33,25 @@ To run the code in the JoinUNet project using a command prompt, follow these ste
 ### 1. Navigate to the Project Folder
 
 Open your command prompt and navigate to the JoinUNet project folder using the `cd` (change directory) command:
-
-```bash
+'''bash
 cd path/to/JoinUNet
 
 ### 2. Model Training
 
 To train both the ResUNet and Attention UNet models, you can use the following command:
-```bash
+
 python train.py --model resunet/attentionunet
 
 ### 3. Ensemble Inference
 
 Once the training is complete, you can perform ensemble inference and save the ensemble.pth file:
-```bash
+
 python ensemble_inference.py
 
 ### 4. Generating Predictions
 
 Now, to generate predictions on test images using the ensemble model, use the following command:
-```bash
+
 python predict.py --model path-to-the-model\ensemble.pth --test-folder path-to-testimages-folder\images --output-folder path-to-save-predicted-masks\output
 
 Make sure to replace path-to-the-model, path-to-testimages-folder, and path-to-save-predicted-masks with the actual paths on your system.
