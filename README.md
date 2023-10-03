@@ -35,6 +35,7 @@ To run the code in the JoinUNet project using a command prompt, follow these ste
 Open your command prompt and navigate to the JoinUNet project folder using the `cd` (change directory) command:
 '''bash
 cd path/to/JoinUNet
+'''
 
 ### 2. Model Training
 
